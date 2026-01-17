@@ -25,64 +25,64 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-20 bg-white">
+    <section id="contact" className="py-16 sm:py-20 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Ready to Go?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">Ready to Go?</h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">Get in Touch</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Get in Touch</h3>
 
               <div className="space-y-3">
                 <a
                   href="tel:3364911253"
-                  className="flex items-center gap-3 p-3 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors group"
+                  className="flex items-center gap-3 p-3 bg-black border border-yellow-600/50 rounded-lg hover:border-yellow-600 transition-colors group"
                 >
-                  <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-700 transition-colors">
-                    <Phone className="w-5 h-5 text-white" />
+                  <div className="w-10 h-10 bg-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-yellow-700 transition-colors">
+                    <Phone className="w-5 h-5 text-black" />
                   </div>
                   <div>
-                    <p className="text-blue-600 font-semibold">(336) 491-1253</p>
-                    <p className="text-xs text-gray-600">Tap to call</p>
+                    <p className="text-yellow-500 font-semibold">(336) 491-1253</p>
+                    <p className="text-xs text-gray-400">Tap to call</p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 text-white" />
+                <div className="flex items-center gap-3 p-3 bg-black border border-slate-800 rounded-lg">
+                  <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-yellow-500" />
                   </div>
                   <div>
-                    <p className="font-semibold text-slate-900 text-sm">Mon-Sat 7am-7pm, Sun 9am-5pm</p>
+                    <p className="font-semibold text-white text-sm">Mon-Sat 7am-7pm, Sun 9am-5pm</p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-white" />
+                <div className="flex items-center gap-3 p-3 bg-black border border-slate-800 rounded-lg">
+                  <div className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-yellow-500" />
                   </div>
                   <div>
-                    <p className="font-semibold text-slate-900 text-sm">Kernersville & Triad Area</p>
+                    <p className="font-semibold text-white text-sm">Kernersville & Triad Area</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="p-5 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg text-white mt-6">
+            <div className="p-5 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-lg text-black mt-6">
               <h4 className="text-base font-semibold mb-2">What You Get</h4>
               <ul className="space-y-1 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-blue-200 mt-0.5">✓</span>
+                  <span className="text-red-600 mt-0.5 font-bold">✓</span>
                   <span>Upfront pricing, no surprises</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-blue-200 mt-0.5">✓</span>
+                  <span className="text-red-600 mt-0.5 font-bold">✓</span>
                   <span>Fast response within hours</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-blue-200 mt-0.5">✓</span>
+                  <span className="text-red-600 mt-0.5 font-bold">✓</span>
                   <span>Same-day service</span>
                 </li>
               </ul>
@@ -90,9 +90,9 @@ export default function Contact() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="bg-gray-50 p-5 sm:p-6 rounded-lg shadow-md space-y-3">
+            <form onSubmit={handleSubmit} className="bg-black border border-slate-800 p-5 sm:p-6 rounded-lg shadow-md space-y-3">
               <div>
-                <label htmlFor="name" className="block text-xs font-semibold text-slate-900 mb-1 uppercase tracking-wide">
+                <label htmlFor="name" className="block text-xs font-semibold text-yellow-500 mb-1 uppercase tracking-wide">
                   Name *
                 </label>
                 <input
@@ -101,13 +101,13 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-sm"
+                  className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent outline-none text-sm text-white"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-xs font-semibold text-slate-900 mb-1 uppercase tracking-wide">
+                <label htmlFor="phone" className="block text-xs font-semibold text-yellow-500 mb-1 uppercase tracking-wide">
                   Phone *
                 </label>
                 <input
@@ -116,13 +116,13 @@ export default function Contact() {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-sm"
+                  className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent outline-none text-sm text-white"
                   placeholder="(336) 555-1234"
                 />
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-xs font-semibold text-slate-900 mb-1 uppercase tracking-wide">
+                <label htmlFor="service" className="block text-xs font-semibold text-yellow-500 mb-1 uppercase tracking-wide">
                   What to Remove *
                 </label>
                 <select
@@ -130,7 +130,7 @@ export default function Contact() {
                   required
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none bg-white text-sm"
+                  className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent outline-none text-sm text-white"
                 >
                   <option value="residential">Residential Junk</option>
                   <option value="furniture">Furniture & Appliances</option>
@@ -141,7 +141,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-xs font-semibold text-slate-900 mb-1 uppercase tracking-wide">
+                <label htmlFor="message" className="block text-xs font-semibold text-yellow-500 mb-1 uppercase tracking-wide">
                   Details *
                 </label>
                 <textarea
@@ -150,13 +150,13 @@ export default function Contact() {
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none text-sm"
+                  className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent outline-none resize-none text-sm text-white"
                   placeholder="What needs to go?"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-xs font-semibold text-slate-900 mb-1 uppercase tracking-wide">
+                <label htmlFor="email" className="block text-xs font-semibold text-yellow-500 mb-1 uppercase tracking-wide">
                   Email (optional)
                 </label>
                 <input
@@ -164,27 +164,27 @@ export default function Contact() {
                   id="email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none text-sm"
+                  className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent outline-none text-sm text-white"
                   placeholder="your@email.com"
                 />
               </div>
 
               {submitted && (
-                <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
-                  <p className="text-green-800 font-semibold text-sm">Request sent!</p>
-                  <p className="text-green-700 text-xs">We'll call you within 2 hours.</p>
+                <div className="p-3 bg-yellow-600/20 border border-yellow-600/50 rounded-lg">
+                  <p className="text-yellow-500 font-semibold text-sm">Request sent!</p>
+                  <p className="text-yellow-600 text-xs">We'll call you within 2 hours.</p>
                 </div>
               )}
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors shadow-lg active:scale-95"
+                className="w-full bg-yellow-600 hover:bg-yellow-700 text-black py-3 rounded-lg font-semibold transition-colors shadow-lg active:scale-95"
               >
                 Get Free Quote
               </button>
 
-              <p className="text-xs text-gray-600 text-center">
-                or call <a href="tel:3364911253" className="text-blue-600 hover:text-blue-700 font-semibold">(336) 491-1253</a>
+              <p className="text-xs text-gray-400 text-center">
+                or call <a href="tel:3364911253" className="text-yellow-500 hover:text-yellow-400 font-semibold">(336) 491-1253</a>
               </p>
             </form>
           </div>

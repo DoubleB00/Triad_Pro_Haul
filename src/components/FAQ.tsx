@@ -32,30 +32,30 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-16 sm:py-20 bg-gray-50">
+    <section className="py-16 sm:py-20 bg-black">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Questions?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">Questions?</h2>
         </div>
 
         <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div key={index} className="bg-slate-900 border border-slate-800 rounded-lg shadow-md overflow-hidden">
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-4 sm:px-6 py-3 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full px-4 sm:px-6 py-3 text-left flex items-center justify-between hover:bg-slate-800 transition-colors"
               >
-                <span className="font-semibold text-slate-900 text-sm sm:text-base pr-4">{faq.question}</span>
+                <span className="font-semibold text-white text-sm sm:text-base pr-4">{faq.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-blue-600 flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-yellow-500 flex-shrink-0 transition-transform ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />
               </button>
 
               {openIndex === index && (
-                <div className="px-4 sm:px-6 pb-3 border-t border-gray-100">
-                  <p className="text-gray-600 text-sm">{faq.answer}</p>
+                <div className="px-4 sm:px-6 pb-3 border-t border-slate-700">
+                  <p className="text-gray-300 text-sm">{faq.answer}</p>
                 </div>
               )}
             </div>

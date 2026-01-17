@@ -6,13 +6,13 @@ export default function MobileBottomBar() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 shadow-xl md:hidden z-50 pb-safe">
+    <div className="fixed bottom-0 left-0 right-0 bg-black border-t border-slate-800 shadow-xl md:hidden z-50 pb-safe">
       <div className="grid grid-cols-2 gap-1.5 p-2">
         <a
           href="tel:3364911253"
-          className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2.5 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-1.5 active:scale-95"
+          className="bg-yellow-600 hover:bg-yellow-700 text-black px-3 py-2.5 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-1.5 active:scale-95"
         >
-          <Phone className="w-4 h-4" />
+          <Phone className="w-4 h-4 text-red-600" />
           Call
         </a>
 
