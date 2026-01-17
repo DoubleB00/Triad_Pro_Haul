@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import VideoSection from './components/VideoSection';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import HowItWorks from './components/HowItWorks';
@@ -10,8 +11,9 @@ import MobileBottomBar from './components/MobileBottomBar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <Hero />
+      <VideoSection />
       <Services />
       <WhyChooseUs />
       <HowItWorks />
